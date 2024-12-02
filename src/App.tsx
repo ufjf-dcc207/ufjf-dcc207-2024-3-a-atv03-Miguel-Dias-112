@@ -6,10 +6,6 @@ function App() {
   return (
     <div className='app'>
       <Animal nome='leao' icone='🦁' peso={10} extinção={false}/>
-      <Animal nome='leao' icone='🦁' peso={10} extinção={false}/>
-      <Animal nome='leao' icone='🦁' peso={10} extinção={false}/>
-      <Animal nome='leao' icone='🦁' peso={10} extinção={false}/>
-      <Animal nome='leao' icone='🦁' peso={10} extinção={false}/>
 
       
     </div>

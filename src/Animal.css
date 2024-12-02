@@ -4,26 +4,40 @@
     padding: 0.5em;
     border-radius: 0.5em;
     animation: rotate 2s linear infinite;
+    display: grid;
+    grid-template-areas: 
+    "icone nome nome" 
+    " icone peso peso" 
+    "icone . extincao";
+    align-items: center;
 }
-.animal :nth-child(1){
-    animation: rotate 0.1s linear infinite;
-
+.animal .icone{
     font-size: 5em;
     font-weight: bold;
+    width: 100%;
+    height: 100%;
+    grid-area: icone    ;
 }
-.animal :nth-child(2){
+.animal  .nome{
     font-size: 1.2em;
     padding: 1em;
-
+    grid-area: nome    ;
+    text-align: center;
 }
-.animal :nth-child(3){
+.animal .peso{
+    
     font-size: 1em;
     padding: 1em;
+    grid-area: peso    ;
+    text-align: center;
+
 }
-.animal :nth-child(4){
+.animal .extincao{
     background-color: red;
     color: white;
-    padding: 2.2em;
+    padding: 1.2em;
     border-radius: 10px;
+    grid-area: extincao    ;
+    justify-self: center;
 
 }
