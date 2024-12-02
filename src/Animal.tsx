@@ -1,11 +1,22 @@
 
 import './Animal.css'
-
-function Animal() {
-
+interface AnimalProps {
+    icone: string;
+    nome: string;
+    peso: number;
+    extinção: boolean;
+}
+function Animal(
+    { icone, nome, peso, extinção }: AnimalProps
+) {
   return (
     <div className='animal'>
-      Hello world
+        <div className='icone'>{icone}</div>
+        <div className='nome'>{nome}</div>
+        <div className='peso'>{peso} kg</div>
+        <div className='extincao'>
+          {extinção ? 'Está em extinção' : 'Não está em extinção'}
+        </div>
     </div>
   )
 }
