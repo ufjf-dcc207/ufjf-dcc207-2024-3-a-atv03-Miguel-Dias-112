@@ -1,11 +1,11 @@
 
 import './App.css'
-
+import Animal from './Animal'
 function App() {
 
   return (
     <div className='app'>
-      Hello world
+      <Animal />
     </div>
   )
 }
