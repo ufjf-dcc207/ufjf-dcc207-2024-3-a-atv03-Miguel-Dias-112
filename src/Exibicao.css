@@ -2,11 +2,14 @@
     font-weight: 900;
     padding: 1em;
     display: grid;
-    grid-template-areas: 'inicio fim local';
+    grid-template-areas: 
+    
+    'inicio fim local'
+    'animais animais animais';
     place-items: center;
     
-    background-color: antiquewhite;
     .inicio{
+        width: 100%;
         color: green;
         grid-area: inicio;
     }
@@ -15,7 +18,14 @@
         grid-area: fim;
     }
     .local{
+        width: 100%;
+
         text-decoration: underline;
         grid-area: local;
+    }
+    .animais{
+        grid-area: animais;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
 }

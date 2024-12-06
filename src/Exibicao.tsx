@@ -4,8 +4,9 @@ interface ExibicaoProps {
     inicio: Date;
     fim: Date;
     local: string;
+    children: React.ReactNode;
 }
-function Exibicao({ inicio, fim, local }: ExibicaoProps) {
+function Exibicao({ inicio, fim, local,children }: ExibicaoProps) {
 
   return (
     <div className='Exibicao'>
@@ -18,6 +19,9 @@ function Exibicao({ inicio, fim, local }: ExibicaoProps) {
         </div>
         <div className="local">
             {local}
+        </div>
+        <div className='animais'>
+            {children}
         </div>
     </div>
   )

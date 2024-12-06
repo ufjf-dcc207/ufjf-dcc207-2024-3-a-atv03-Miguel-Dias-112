@@ -10,6 +10,8 @@
     " icone peso peso" 
     "icone . extincao";
     align-items: center;
+
+    width: 100%;
 }
 .animal .icone{
     font-size: 5em;
