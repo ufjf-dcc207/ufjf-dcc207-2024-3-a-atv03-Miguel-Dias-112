@@ -1,0 +1,21 @@
+.Exibicao{
+    font-weight: 900;
+    padding: 1em;
+    display: grid;
+    grid-template-areas: 'inicio fim local';
+    place-items: center;
+    
+    background-color: antiquewhite;
+    .inicio{
+        color: green;
+        grid-area: inicio;
+    }
+    .fim{
+        color: red;
+        grid-area: fim;
+    }
+    .local{
+        text-decoration: underline;
+        grid-area: local;
+    }
+}
